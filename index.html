@@ -11,7 +11,7 @@
 <body>
     <header class="container">
         <!-- nav bar -->
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="">
@@ -26,13 +26,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpack</a>
+                            <a class="nav-link" href="#bags">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
 
                     </ul>
@@ -129,7 +129,7 @@
         </section>
 
         <!-- shoes Section start-->
-        <section class="container my-5">
+        <section id="shoes" class="container my-5">
             <h2 class="my-3">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -181,7 +181,7 @@
         </section>
 
         <!-- backpack section start -->
-        <section class="container my-5">
+        <section id="bags" class="container my-5">
             <h2 class="my-3">Backpacks</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -231,7 +231,25 @@
                 </div>
             </div>
         </section>
+
+        <!-- subscribe start -->
+        <section style="height: 300px" id="subscribe" class="container rounded-3 d-flex justify-content-center align-items-center bg-info">
+            <div>
+                <h2>Let's Stay In Touch</h2>
+                <p>Get updates on sales, specials and more</p>
+                <form>
+                    <div class="mb-2">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer class="mt-5 text-center">
+        <p><small>&copy;2022. Panda Commerce. All rights reserved. Sofia, Bulgaria</small></p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js
 "></script>
 </body>
